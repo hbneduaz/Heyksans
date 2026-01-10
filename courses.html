@@ -44,42 +44,43 @@
     }
 
     .hero {
-      min-height: 80vh;
-      padding: 80px 20px;
+      background: linear-gradient(135deg, #1f5f4a, #4caf7d);
+      color: white;
+      padding: 90px 20px;
       text-align: center;
-      background: linear-gradient(135deg, #e8f3ef, #f9fbfa);
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
     }
 
     .hero h2 {
-      font-size: 38px;
+      font-size: 40px;
       margin-bottom: 20px;
-      color: #2f6f5f;
     }
 
     .hero p {
-      max-width: 800px;
+      max-width: 900px;
+      margin: auto;
       font-size: 18px;
       line-height: 1.7;
+      opacity: 0.95;
+    }
+
+    .info {
+      padding: 70px 20px;
+      text-align: center;
+      background: #f9fbfa;
+    }
+
+    .info h3 {
+      font-size: 28px;
+      color: #2f6f5f;
+      margin-bottom: 20px;
+    }
+
+    .info p {
+      max-width: 800px;
+      margin: auto;
+      font-size: 17px;
+      line-height: 1.7;
       color: #444;
-      margin-bottom: 35px;
-    }
-
-    .hero button {
-      padding: 14px 36px;
-      font-size: 16px;
-      border: none;
-      border-radius: 30px;
-      background: #4caf7d;
-      color: white;
-      cursor: pointer;
-    }
-
-    .hero button:hover {
-      background: #3e9e6d;
     }
 
     .note {
@@ -105,27 +106,31 @@
   <h1>Heyksans Education</h1>
   <nav>
     <a href="index.html">Home</a>
-    <a href="products.html">Shop</a>
-    <a href="courses.html">Courses</a>
+    <a href="shops.html">Shops</a>
+    <a href="courses.html">Course</a>
     <a href="contact.html">Contact</a>
   </nav>
 </header>
 
 <section class="hero">
-  <h2>Yeni nəsil öyrənmə platforması</h2>
-
+  <h2>Təhsil və inkişaf fəaliyyəti</h2>
   <p>
-    Heyksans Education bilik, inkişaf və real bacarıqlar üzərində
-    qurulan təhsil modeli üzərində çalışır.
-    Kurs proqramları mərhələli şəkildə hazırlanır və çox yaxında təqdim ediləcək.
+    Heyksans Education bilik yönümlü təlim modelləri üzərində fəaliyyət göstərir.
+    Məqsədimiz yalnız dərs keçmək deyil, düşünən, inkişaf edən və real bacarıqlar qazanan
+    bir cəmiyyət formalaşdırmaqdır.
+  </p>
+</section>
+
+<section class="info">
+  <h3>Öyrənməyə fərqli yanaşma</h3>
+  <p>
+    Tədris proqramları müasir tələblərə uyğun şəkildə hazırlanır və mərhələli olaraq
+    təqdim ediləcək. Kurs məzmunları, formatlar və iştirak şərtləri yaxın zamanda
+    bu bölmədə paylaşılacaq.
   </p>
 
-  <button onclick="location.href='contact.html'">
-    Məlumat al
-  </button>
-
   <div class="note">
-    Kurs məzmunları hazırlandıqdan sonra bu bölmə yenilənəcək
+    Hazırda kurs proqramları hazırlanma mərhələsindədir
   </div>
 </section>
 
