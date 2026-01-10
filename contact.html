@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="az"> 
+<html lang="az">
 <head>
   <meta charset="UTF-8">
   <title>Əlaqə | Heyksans Education</title>
@@ -10,68 +10,109 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: Arial, sans-serif;
+      font-family: "Segoe UI", Arial, sans-serif;
     }
 
     body {
-      background: #f4f7f6;
+      background: #f1f4f3;
       color: #2c2c2c;
     }
 
     header {
       background: #ffffff;
-      padding: 20px 40px;
+      padding: 22px 50px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      border-bottom: 1px solid #e2e6e4;
     }
 
     header h1 {
       color: #2f6f5f;
-      font-size: 24px;
+      font-size: 26px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
     }
 
     nav a {
-      margin-left: 20px;
+      margin-left: 22px;
       text-decoration: none;
       color: #444;
-      font-weight: 500;
+      font-size: 15px;
     }
 
     nav a:hover {
       color: #2f6f5f;
     }
 
-    .contact {
-      max-width: 800px;
-      margin: 60px auto;
-      background: #ffffff;
-      padding: 40px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    .page-title {
+      text-align: center;
+      padding: 70px 20px 30px;
     }
 
-    .contact h2 {
-      text-align: center;
-      margin-bottom: 30px;
+    .page-title h2 {
+      font-size: 34px;
+      color: #2f6f5f;
+      margin-bottom: 10px;
+    }
+
+    .page-title p {
+      color: #555;
+      font-size: 16px;
+    }
+
+    .contact-box {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #ffffff;
+      padding: 45px 50px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      padding: 18px 0;
+      border-bottom: 1px solid #eef1ef;
+    }
+
+    .contact-item:last-child {
+      border-bottom: none;
+    }
+
+    .icon {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      background: #e8f3ef;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 20px;
+      font-size: 18px;
       color: #2f6f5f;
     }
 
-    .contact p {
+    .contact-text h4 {
       font-size: 16px;
-      margin-bottom: 15px;
-      color: #444;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .contact-text p {
+      font-size: 15px;
+      color: #555;
     }
 
     footer {
-      text-align: center;
+      margin-top: 70px;
       padding: 25px;
+      text-align: center;
       background: #ffffff;
-      margin-top: 60px;
       font-size: 14px;
       color: #666;
-      box-shadow: 0 -2px 6px rgba(0,0,0,0.05);
+      border-top: 1px solid #e2e6e4;
     }
   </style>
 </head>
@@ -87,14 +128,53 @@
   </nav>
 </header>
 
-<section class="contact">
-  <h2>Əlaqə Məlumatları</h2>
+<section class="page-title">
+  <h2>Bizimlə Əlaqə</h2>
+  <p>Sualınız və ya əməkdaşlıq təklifiniz varsa, bizimlə əlaqə saxlayın</p>
+</section>
 
-  <p><strong>📞 Telefon:</strong> 070-319-40-50</p>
-  <p><strong>📧 Email:</strong> hbneduaz26@gmail.com</p>
-  <p><strong>💬 WhatsApp:</strong> 070-319-40-50</p>
-  <p><strong>📍 Ünvan:</strong> Lənkəran</p>
-  <p><strong>📷 Instagram:</strong> @heyksans_official</p>
+<section class="contact-box">
+
+  <div class="contact-item">
+    <div class="icon">📞</div>
+    <div class="contact-text">
+      <h4>Telefon</h4>
+      <p>070-319-40-50</p>
+    </div>
+  </div>
+
+  <div class="contact-item">
+    <div class="icon">📧</div>
+    <div class="contact-text">
+      <h4>Email</h4>
+      <p>hbneduaz26@gmail.com</p>
+    </div>
+  </div>
+
+  <div class="contact-item">
+    <div class="icon">💬</div>
+    <div class="contact-text">
+      <h4>WhatsApp</h4>
+      <p>070-319-40-50</p>
+    </div>
+  </div>
+
+  <div class="contact-item">
+    <div class="icon">📍</div>
+    <div class="contact-text">
+      <h4>Ünvan</h4>
+      <p>Lənkəran</p>
+    </div>
+  </div>
+
+  <div class="contact-item">
+    <div class="icon">📷</div>
+    <div class="contact-text">
+      <h4>Instagram</h4>
+      <p>@heyksans_official</p>
+    </div>
+  </div>
+
 </section>
 
 <footer>
