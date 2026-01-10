@@ -7,58 +7,75 @@
 
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f7f8;
             margin: 0;
-            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #eef5f1, #ffffff);
+            color: #1f3d2b;
         }
 
         header {
-            background-color: #1f3d2b;
-            color: white;
-            padding: 15px;
-            text-align: center;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #ffffff;
+            border-bottom: 1px solid #ddd;
         }
 
-        nav a {
-            color: white;
-            margin: 0 10px;
+        header a {
             text-decoration: none;
+            color: #1f3d2b;
             font-weight: bold;
+            margin-left: 15px;
         }
 
-        .container {
-            padding: 30px;
+        .hero {
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px;
         }
 
-        .course {
-            background: white;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 8px;
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
         }
 
-        .course h3 {
-            margin-top: 0;
+        .hero p {
+            max-width: 600px;
+            font-size: 18px;
+            opacity: 0.9;
+            margin-bottom: 30px;
         }
 
         .btn {
-            display: inline-block;
-            padding: 10px 18px;
-            background-color: #2f7d5a;
+            padding: 14px 28px;
+            background: #2f7d5a;
             color: white;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 30px;
+            font-size: 16px;
+            transition: 0.3s;
         }
 
         .btn:hover {
-            background-color: #256648;
+            background: #245f45;
+        }
+
+        .info {
+            margin-top: 40px;
+            font-size: 14px;
+            opacity: 0.7;
         }
 
         footer {
             text-align: center;
             padding: 15px;
-            background: #eee;
+            font-size: 14px;
+            background: #f2f2f2;
         }
     </style>
 </head>
@@ -66,49 +83,31 @@
 <body>
 
 <header>
-    <h1>Heyksans Education</h1>
+    <div>Heyksans Education</div>
     <nav>
         <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="courses.html">Courses</a>
         <a href="products.html">Shop</a>
+        <a href="courses.html">Courses</a>
         <a href="contact.html">Contact</a>
     </nav>
 </header>
 
-<div class="container">
+<section class="hero">
+    <h1>Gələcəyini bu gündən qur</h1>
+    <p>
+        Təhsil, inkişaf və bilik üzərində qurulan yeni bir öyrənmə modeli
+        üzərində çalışırıq. Çox yaxında istifadəyə veriləcək.
+    </p>
 
-    <h2>Kurslarımız</h2>
-    <p>Təhsil və inkişaf üçün hazırlanmış proqramlar</p>
+    <a class="btn" href="contact.html">Məlumat al</a>
 
-    <!-- KURS 1 -->
-    <div class="course">
-        <h3>Web Proqramlaşdırma</h3>
-        <p>HTML, CSS və veb sayt əsasları</p>
-        <p><strong>Müddət:</strong> 2 ay</p>
-        <a class="btn" href="contact.html">Qeydiyyata keç</a>
+    <div class="info">
+        Kurs proqramları hazırlanır
     </div>
-
-    <!-- KURS 2 -->
-    <div class="course">
-        <h3>Frontend Development</h3>
-        <p>Modern sayt dizaynı və interaktivlik</p>
-        <p><strong>Müddət:</strong> 3 ay</p>
-        <a class="btn" href="contact.html">Qeydiyyata keç</a>
-    </div>
-
-    <!-- KURS 3 -->
-    <div class="course">
-        <h3>Rəqəmsal Bacarıqlar</h3>
-        <p>İnternet və texnologiya bilikləri</p>
-        <p><strong>Müddət:</strong> 1 ay</p>
-        <a class="btn" href="contact.html">Qeydiyyata keç</a>
-    </div>
-
-</div>
+</section>
 
 <footer>
-    © 2026 Heyksans Education
+    © 2026 Heyksans Education — Bilik gücdür
 </footer>
 
 </body>
