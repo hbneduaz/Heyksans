@@ -14,146 +14,132 @@
     }
 
     body {
-      background: linear-gradient(180deg, #f0f5f3, #ffffff);
-      color: #2c2c2c;
+      background: #f2f5f4;
+      color: #2b2b2b;
     }
 
     header {
       background: #ffffff;
-      padding: 25px 60px;
+      padding: 24px 60px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border-bottom: 1px solid #e1e5e3;
+      border-bottom: 1px solid #e3e7e5;
     }
 
     header h1 {
-      color: #255f52;
-      font-size: 28px;
+      font-size: 26px;
+      color: #1f5c4d;
       font-weight: 600;
-      letter-spacing: 0.8px;
     }
 
     nav a {
-      margin-left: 26px;
+      margin-left: 28px;
       text-decoration: none;
       color: #444;
       font-size: 15px;
-      position: relative;
     }
 
-    nav a::after {
-      content: "";
-      position: absolute;
-      width: 0;
-      height: 2px;
-      background: #4caf7d;
-      left: 0;
-      bottom: -6px;
-      transition: 0.3s;
+    nav a:hover {
+      color: #1f5c4d;
     }
 
-    nav a:hover::after {
-      width: 100%;
-    }
-
-    .hero {
-      padding: 90px 20px 50px;
+    /* HERO */
+    .contact-hero {
+      background: linear-gradient(135deg, #1f5c4d, #4caf7d);
+      padding: 90px 20px;
+      color: #ffffff;
       text-align: center;
-      background: linear-gradient(135deg, #e3f2ed, #ffffff);
     }
 
-    .hero h2 {
-      font-size: 40px;
-      color: #255f52;
+    .contact-hero h2 {
+      font-size: 42px;
       margin-bottom: 15px;
+      font-weight: 600;
     }
 
-    .hero p {
-      max-width: 800px;
+    .contact-hero p {
+      max-width: 900px;
       margin: auto;
       font-size: 17px;
-      color: #555;
       line-height: 1.8;
+      opacity: 0.95;
     }
 
-    .contact-wrapper {
-      max-width: 1100px;
-      margin: 70px auto;
+    /* CONTENT */
+    .contact-section {
+      max-width: 1200px;
+      margin: -70px auto 80px;
       padding: 0 20px;
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1.3fr 1fr;
       gap: 50px;
     }
 
-    .contact-info {
+    .contact-details {
       background: #ffffff;
-      padding: 45px;
-      border-radius: 16px;
-      box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+      padding: 55px;
+      border-radius: 18px;
+      box-shadow: 0 20px 45px rgba(0,0,0,0.12);
     }
 
-    .contact-info h3 {
-      font-size: 24px;
-      color: #255f52;
+    .contact-details h3 {
+      font-size: 28px;
       margin-bottom: 25px;
+      color: #1f5c4d;
     }
 
-    .info-item {
-      display: flex;
-      align-items: flex-start;
-      margin-bottom: 25px;
+    .detail {
+      margin-bottom: 28px;
     }
 
-    .info-icon {
-      font-size: 22px;
-      color: #4caf7d;
-      margin-right: 18px;
-      margin-top: 4px;
+    .detail span {
+      display: block;
+      font-size: 14px;
+      color: #777;
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
     }
 
-    .info-text h4 {
-      font-size: 16px;
-      margin-bottom: 4px;
+    .detail p {
+      font-size: 17px;
+      color: #333;
+      font-weight: 500;
     }
 
-    .info-text p {
-      font-size: 15px;
-      color: #555;
-    }
-
-    .contact-note {
+    .contact-info-box {
       background: #f7fbf9;
-      padding: 45px;
-      border-radius: 16px;
-      border-left: 6px solid #4caf7d;
+      padding: 55px;
+      border-radius: 18px;
+      border: 1px solid #e0ece7;
     }
 
-    .contact-note h3 {
-      font-size: 23px;
+    .contact-info-box h3 {
+      font-size: 26px;
       margin-bottom: 20px;
-      color: #255f52;
+      color: #1f5c4d;
     }
 
-    .contact-note p {
+    .contact-info-box p {
       font-size: 16px;
-      color: #555;
       line-height: 1.9;
+      color: #555;
     }
 
     footer {
-      margin-top: 90px;
+      background: #ffffff;
       padding: 30px;
       text-align: center;
-      background: #ffffff;
-      border-top: 1px solid #e1e5e3;
+      border-top: 1px solid #e3e7e5;
       font-size: 14px;
       color: #666;
     }
 
     @media (max-width: 900px) {
-      .contact-wrapper {
+      .contact-section {
         grid-template-columns: 1fr;
+        margin-top: -40px;
       }
     }
   </style>
@@ -170,67 +156,51 @@
   </nav>
 </header>
 
-<section class="hero">
-  <h2>Əlaqə və Əməkdaşlıq</h2>
+<section class="contact-hero">
+  <h2>Əlaqə və Rəsmi Müraciət</h2>
   <p>
-    Heyksans Education olaraq təhsil, nəşriyyat və bilik əsaslı layihələr üzrə
-    əməkdaşlığa və suallarınıza açığıq.
+    Heyksans Education — təhsil, nəşriyyat və bilik əsaslı təşəbbüslər üzrə
+    əməkdaşlıqlara açıq olan institusional platformadır.
   </p>
 </section>
 
-<section class="contact-wrapper">
+<section class="contact-section">
 
-  <div class="contact-info">
-    <h3>Əlaqə Məlumatları</h3>
+  <div class="contact-details">
+    <h3>Rəsmi Əlaqə Məlumatları</h3>
 
-    <div class="info-item">
-      <div class="info-icon">📞</div>
-      <div class="info-text">
-        <h4>Telefon</h4>
-        <p>070-319-40-50</p>
-      </div>
+    <div class="detail">
+      <span>Telefon</span>
+      <p>070-319-40-50</p>
     </div>
 
-    <div class="info-item">
-      <div class="info-icon">📧</div>
-      <div class="info-text">
-        <h4>Email</h4>
-        <p>hbneduaz26@gmail.com</p>
-      </div>
+    <div class="detail">
+      <span>Email</span>
+      <p>hbneduaz26@gmail.com</p>
     </div>
 
-    <div class="info-item">
-      <div class="info-icon">💬</div>
-      <div class="info-text">
-        <h4>WhatsApp</h4>
-        <p>070-319-40-50</p>
-      </div>
+    <div class="detail">
+      <span>WhatsApp</span>
+      <p>070-319-40-50</p>
     </div>
 
-    <div class="info-item">
-      <div class="info-icon">📍</div>
-      <div class="info-text">
-        <h4>Ünvan</h4>
-        <p>Lənkəran</p>
-      </div>
+    <div class="detail">
+      <span>Ünvan</span>
+      <p>Lənkəran</p>
     </div>
 
-    <div class="info-item">
-      <div class="info-icon">📷</div>
-      <div class="info-text">
-        <h4>Instagram</h4>
-        <p>@heyksans_official</p>
-      </div>
+    <div class="detail">
+      <span>Instagram</span>
+      <p>@heyksans_official</p>
     </div>
   </div>
 
-  <div class="contact-note">
-    <h3>Niyə Bizimlə Əlaqə Saxlamalısınız?</h3>
+  <div class="contact-info-box">
+    <h3>Əməkdaşlıq və Sorğular</h3>
     <p>
-      Heyksans Education yalnız məhsul və kurs təqdim edən bir platforma deyil.
-      Biz bilik, düşüncə və inkişaf üzərində qurulan uzunmüddətli əməkdaşlıqlara
-      üstünlük veririk. Təhsil layihələri, nəşriyyat əməkdaşlığı və akademik
-      təşəbbüslər üçün bizimlə əlaqə saxlaya bilərsiniz.
+      Akademik əməkdaşlıq, nəşriyyat layihələri, kurs proqramları və rəsmi
+      müraciətlər üçün bizimlə əlaqə saxlaya bilərsiniz.
+      Heyksans Education bilik əsaslı uzunmüddətli tərəfdaşlıqlara üstünlük verir.
     </p>
   </div>
 
