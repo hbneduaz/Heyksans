@@ -1,113 +1,136 @@
 <!DOCTYPE html>
 <html lang="az">
 <head>
-    <meta charset="UTF-8">
-    <title>Kurslar | Heyksans Education</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Kurslar | Heyksans Education</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #eef5f1, #ffffff);
-            color: #1f3d2b;
-        }
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
 
-        header {
-            padding: 15px 30px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: #ffffff;
-            border-bottom: 1px solid #ddd;
-        }
+    body {
+      background: #f4f7f6;
+      color: #2c2c2c;
+    }
 
-        header a {
-            text-decoration: none;
-            color: #1f3d2b;
-            font-weight: bold;
-            margin-left: 15px;
-        }
+    header {
+      background: #ffffff;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
 
-        .hero {
-            min-height: 80vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 40px;
-        }
+    header h1 {
+      color: #2f6f5f;
+      font-size: 24px;
+    }
 
-        .hero h1 {
-            font-size: 42px;
-            margin-bottom: 15px;
-        }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #444;
+      font-weight: 500;
+    }
 
-        .hero p {
-            max-width: 600px;
-            font-size: 18px;
-            opacity: 0.9;
-            margin-bottom: 30px;
-        }
+    nav a:hover {
+      color: #2f6f5f;
+    }
 
-        .btn {
-            padding: 14px 28px;
-            background: #2f7d5a;
-            color: white;
-            text-decoration: none;
-            border-radius: 30px;
-            font-size: 16px;
-            transition: 0.3s;
-        }
+    .hero {
+      min-height: 80vh;
+      padding: 80px 20px;
+      text-align: center;
+      background: linear-gradient(135deg, #e8f3ef, #f9fbfa);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
 
-        .btn:hover {
-            background: #245f45;
-        }
+    .hero h2 {
+      font-size: 38px;
+      margin-bottom: 20px;
+      color: #2f6f5f;
+    }
 
-        .info {
-            margin-top: 40px;
-            font-size: 14px;
-            opacity: 0.7;
-        }
+    .hero p {
+      max-width: 800px;
+      font-size: 18px;
+      line-height: 1.7;
+      color: #444;
+      margin-bottom: 35px;
+    }
 
-        footer {
-            text-align: center;
-            padding: 15px;
-            font-size: 14px;
-            background: #f2f2f2;
-        }
-    </style>
+    .hero button {
+      padding: 14px 36px;
+      font-size: 16px;
+      border: none;
+      border-radius: 30px;
+      background: #4caf7d;
+      color: white;
+      cursor: pointer;
+    }
+
+    .hero button:hover {
+      background: #3e9e6d;
+    }
+
+    .note {
+      margin-top: 30px;
+      font-size: 14px;
+      color: #777;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #ffffff;
+      font-size: 14px;
+      color: #666;
+      box-shadow: 0 -2px 6px rgba(0,0,0,0.05);
+    }
+  </style>
 </head>
 
 <body>
 
 <header>
-    <div>Heyksans Education</div>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="products.html">Shop</a>
-        <a href="courses.html">Courses</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+  <h1>Heyksans Education</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="products.html">Shop</a>
+    <a href="courses.html">Courses</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 </header>
 
 <section class="hero">
-    <h1>Gələcəyini bu gündən qur</h1>
-    <p>
-        Təhsil, inkişaf və bilik üzərində qurulan yeni bir öyrənmə modeli
-        üzərində çalışırıq. Çox yaxında istifadəyə veriləcək.
-    </p>
+  <h2>Yeni nəsil öyrənmə platforması</h2>
 
-    <a class="btn" href="contact.html">Məlumat al</a>
+  <p>
+    Heyksans Education bilik, inkişaf və real bacarıqlar üzərində
+    qurulan təhsil modeli üzərində çalışır.
+    Kurs proqramları mərhələli şəkildə hazırlanır və çox yaxında təqdim ediləcək.
+  </p>
 
-    <div class="info">
-        Kurs proqramları hazırlanır
-    </div>
+  <button onclick="location.href='contact.html'">
+    Məlumat al
+  </button>
+
+  <div class="note">
+    Kurs məzmunları hazırlandıqdan sonra bu bölmə yenilənəcək
+  </div>
 </section>
 
 <footer>
-    © 2026 Heyksans Education — Bilik gücdür
+  © 2026 Heyksans Education — Bilik gücdür
 </footer>
 
 </body>
