@@ -1,1 +1,207 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8">
+  <title>Shop | Heyksans Education</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Arial, sans-serif;
+    }
+
+    body {
+      background: #f2f5f4;
+      color: #2b2b2b;
+    }
+
+    header {
+      background: #ffffff;
+      padding: 24px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #e3e7e5;
+    }
+
+    header h1 {
+      font-size: 26px;
+      color: #1f5c4d;
+      font-weight: 600;
+    }
+
+    nav a {
+      margin-left: 28px;
+      text-decoration: none;
+      color: #444;
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      color: #1f5c4d;
+    }
+
+    .shop-hero {
+      background: linear-gradient(135deg, #1f5c4d, #4caf7d);
+      padding: 90px 20px;
+      color: #ffffff;
+      text-align: center;
+    }
+
+    .shop-hero h2 {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    .shop-hero p {
+      max-width: 900px;
+      margin: auto;
+      font-size: 17px;
+      line-height: 1.8;
+      opacity: 0.95;
+    }
+
+    .shop-container {
+      max-width: 1200px;
+      margin: -60px auto 80px;
+      padding: 0 20px;
+    }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+    }
+
+    .product-card {
+      background: #ffffff;
+      border-radius: 18px;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .product-image {
+      height: 180px;
+      background: #e8f3ef;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #7aa59a;
+      font-size: 14px;
+    }
+
+    .product-content {
+      padding: 25px;
+      flex: 1;
+    }
+
+    .product-content h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: #1f5c4d;
+    }
+
+    .product-content p {
+      font-size: 15px;
+      line-height: 1.6;
+      color: #555;
+      margin-bottom: 18px;
+    }
+
+    .buy-box {
+      padding: 20px 25px;
+      border-top: 1px solid #eef1ef;
+      text-align: center;
+    }
+
+    .buy-box a {
+      display: inline-block;
+      padding: 10px 24px;
+      border-radius: 25px;
+      background: #4caf7d;
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .buy-box a:hover {
+      background: #3e9e6d;
+    }
+
+    .empty-note {
+      text-align: center;
+      margin-top: 60px;
+      font-size: 16px;
+      color: #666;
+    }
+
+    footer {
+      background: #ffffff;
+      padding: 30px;
+      text-align: center;
+      border-top: 1px solid #e3e7e5;
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Heyksans Education</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="shops.html">Shops</a>
+    <a href="courses.html">Course</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="shop-hero">
+  <h2>Rəsmi Məhsullar</h2>
+  <p>
+    Heyksans Education tərəfindən təqdim olunan təhsil yönümlü nəşrlər və
+    bilik əsaslı məhsullar.
+  </p>
+</section>
+
+<section class="shop-container">
+
+  <div class="products-grid">
+
+    <!-- MƏHSUL NÜMUNƏSİ (sonra kopyala) -->
+    <!--
+    <div class="product-card">
+      <div class="product-image">
+        Məhsul şəkli
+      </div>
+      <div class="product-content">
+        <h3>Məhsul adı</h3>
+        <p>Məhsul haqqında qısa təsvir burada yazılacaq.</p>
+      </div>
+      <div class="buy-box">
+        <a href="https://wa.me/994703194050">Əlaqə ilə al</a>
+      </div>
+    </div>
+    -->
+
+  </div>
+
+  <div class="empty-note">
+    Hazırda məhsullar əlavə edilir.  
+    Yaxın zamanda yenilənəcək.
+  </div>
+
+</section>
+
+<footer>
+  © 2026 Heyksans Education — Bilik gücdür
+</footer>
+
+</body>
+</html>
