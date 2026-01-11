@@ -1,1 +1,179 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8">
+  <title>Test Vəsaiti | Ətraflı Məlumat</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Arial, sans-serif;
+    }
+
+    body {
+      background: #f6f8f7;
+      color: #2b2b2b;
+    }
+
+    header {
+      background: #ffffff;
+      padding: 22px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #e3e7e5;
+    }
+
+    header h1 {
+      font-size: 24px;
+      color: #1f5c4d;
+      font-weight: 600;
+    }
+
+    nav a {
+      margin-left: 26px;
+      text-decoration: none;
+      color: #444;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #1f5c4d;
+    }
+
+    .details-container {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    .detail-card {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+    }
+
+    .detail-card h2 {
+      color: #1f5c4d;
+      margin-bottom: 15px;
+      font-size: 22px;
+    }
+
+    .detail-card ul {
+      margin-top: 10px;
+      padding-left: 20px;
+    }
+
+    .detail-card ul li {
+      margin-bottom: 8px;
+      font-size: 15px;
+      color: #444;
+    }
+
+    .meta {
+      margin-top: 15px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    footer {
+      background: #ffffff;
+      padding: 28px;
+      text-align: center;
+      border-top: 1px solid #e3e7e5;
+      font-size: 14px;
+      color: #666;
+      margin-top: 80px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Heyksans Education</h1>
+  <nav>
+    <a href="../index.html">Home</a>
+    <a href="../shops.html">Shops</a>
+    <a href="../contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="details-container">
+
+  <div class="detail-card">
+    <h2>1-ci qrup Test Vəsaiti</h2>
+    <p>
+      Abituriyentlər üçün hazırlanmış bu test vəsaiti ali məktəblərə qəbul
+      proqramına uyğun şəkildə tərtib edilmişdir.
+    </p>
+    <ul>
+      <li>Riyaziyyat</li>
+      <li>Fizika</li>
+      <li>Kimya</li>
+    </ul>
+    <div class="meta">
+      Növ: Test &nbsp;|&nbsp; Format: PDF &nbsp;|&nbsp; Status: Aktiv
+    </div>
+  </div>
+
+  <div class="detail-card">
+    <h2>2-ci qrup Test Vəsaiti</h2>
+    <p>
+      Bu vəsait iqtisadi və sosial yönümlü ixtisaslara hazırlaşan
+      abituriyentlər üçün nəzərdə tutulmuşdur.
+    </p>
+    <ul>
+      <li>Riyaziyyat</li>
+      <li>Coğrafiya</li>
+      <li>Tarix</li>
+    </ul>
+    <div class="meta">
+      Növ: Test &nbsp;|&nbsp; Format: PDF &nbsp;|&nbsp; Status: Aktiv
+    </div>
+  </div>
+
+  <div class="detail-card">
+    <h2>3-cü qrup Test Vəsaiti</h2>
+    <p>
+      Humanitar ixtisaslara hazırlaşan abituriyentlər üçün hazırlanmış
+      sistemli test toplusudur.
+    </p>
+    <ul>
+      <li>Azərbaycan dili</li>
+      <li>Tarix</li>
+      <li>Ədəbiyyat</li>
+    </ul>
+    <div class="meta">
+      Növ: Test &nbsp;|&nbsp; Format: PDF &nbsp;|&nbsp; Status: Aktiv
+    </div>
+  </div>
+
+  <div class="detail-card">
+    <h2>4-cü qrup Test Vəsaiti</h2>
+    <p>
+      Tibbi və bioloji ixtisaslara qəbul üçün nəzərdə tutulmuş
+      akademik test vəsaitidir.
+    </p>
+    <ul>
+      <li>Biologiya</li>
+      <li>Kimya</li>
+      <li>Fizika</li>
+    </ul>
+    <div class="meta">
+      Növ: Test &nbsp;|&nbsp; Format: PDF &nbsp;|&nbsp; Status: Aktiv
+    </div>
+  </div>
+
+</section>
+
+<footer>
+  © 2026 Heyksans Education — Bilik gücdür
+</footer>
+
+</body>
+</html>
