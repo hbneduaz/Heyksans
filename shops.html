@@ -30,6 +30,7 @@
     header h1 {
       font-size: 26px;
       color: #1f5c4d;
+      font-weight: 600;
     }
 
     nav a {
@@ -46,13 +47,20 @@
     .shop-hero {
       background: linear-gradient(135deg, #1f5c4d, #4caf7d);
       padding: 90px 20px;
-      color: #fff;
+      color: #ffffff;
       text-align: center;
     }
 
     .shop-hero h2 {
       font-size: 42px;
       margin-bottom: 15px;
+    }
+
+    .shop-hero p {
+      max-width: 900px;
+      margin: auto;
+      font-size: 17px;
+      line-height: 1.8;
     }
 
     .shop-container {
@@ -68,7 +76,7 @@
     }
 
     .product-card {
-      background: #fff;
+      background: #ffffff;
       border-radius: 18px;
       box-shadow: 0 15px 35px rgba(0,0,0,0.1);
       overflow: hidden;
@@ -76,9 +84,9 @@
       flex-direction: column;
     }
 
-    .product-card img {
+    .product-image img {
       width: 100%;
-      height: 200px;
+      height: 220px;
       object-fit: cover;
     }
 
@@ -89,51 +97,45 @@
 
     .product-content h3 {
       font-size: 18px;
+      margin-bottom: 10px;
       color: #1f5c4d;
-      margin-bottom: 8px;
     }
 
     .product-content p {
       font-size: 14px;
       line-height: 1.6;
       color: #555;
+      margin-bottom: 12px;
     }
 
     .price {
-      margin-top: 10px;
       font-weight: 600;
-      color: #333;
+      color: #000;
+      margin-top: 10px;
     }
 
     .buy-box {
       padding: 18px;
       border-top: 1px solid #eef1ef;
-      display: flex;
-      justify-content: space-between;
-      gap: 10px;
+      text-align: center;
     }
 
     .buy-box a {
-      flex: 1;
-      text-align: center;
-      padding: 10px;
+      display: inline-block;
+      padding: 10px 24px;
       border-radius: 25px;
+      background: #4caf7d;
+      color: #ffffff;
       text-decoration: none;
       font-size: 14px;
     }
 
-    .detail-btn {
-      border: 1px solid #4caf7d;
-      color: #4caf7d;
-    }
-
-    .contact-btn {
-      background: #4caf7d;
-      color: #fff;
+    .buy-box a:hover {
+      background: #3e9e6d;
     }
 
     footer {
-      background: #fff;
+      background: #ffffff;
       padding: 30px;
       text-align: center;
       border-top: 1px solid #e3e7e5;
@@ -155,62 +157,97 @@
 </header>
 
 <section class="shop-hero">
-  <h2>Rəsmi Nəşrlər</h2>
-  <p>Təhsil yönümlü test vəsaitləri və bilik əsaslı materiallar</p>
+  <h2>Test Vəsaitləri</h2>
+  <p>
+    Abituriyentlər üçün hazırlanmış, rəsmi qəbul proqramına uyğun test kitabları.
+  </p>
 </section>
 
 <section class="shop-container">
   <div class="products-grid">
 
+    <!-- 1-ci qrup -->
     <div class="product-card">
-      <img src="images.1ciqrup.png">
+      <div class="product-image">
+        <img src="images.qrup1.png" alt="1-ci qrup test kitabı">
+      </div>
       <div class="product-content">
-        <h3>Test Vəsaiti – I Qrup</h3>
-        <p>Növ: Test • Format: PDF • Abituriyentlər üçün hazırlanıb.</p>
-        <div class="price">Qiymət: — ₼</div>
+        <h3>1-ci qrup Test Kitabı</h3>
+        <p>
+          Abituriyentlər üçün nəzərdə tutulmuş bu test vəsaiti qəbul proqramına
+          uyğun hazırlanmışdır.
+        </p>
+        <p>
+          <strong>Fənlər:</strong> Azərbaycan dili, İngilis dili, Riyaziyyat,
+          Kimya, Fizika, İnformatika
+        </p>
+        <p class="price">Qiymət: —</p>
       </div>
       <div class="buy-box">
-        <a class="detail-btn" href="#">Ətraflı</a>
-        <a class="contact-btn" href="contact.html">Əlaqə</a>
+        <a href="https://wa.me/994703194050">Sifariş üçün əlaqə</a>
       </div>
     </div>
 
+    <!-- 2-ci qrup -->
     <div class="product-card">
-      <img src="images.2ciqrup.png">
+      <div class="product-image">
+        <img src="images.qrup2.png" alt="2-ci qrup test kitabı">
+      </div>
       <div class="product-content">
-        <h3>Test Vəsaiti – II Qrup</h3>
-        <p>Növ: Test • Format: PDF • Abituriyentlər üçün.</p>
-        <div class="price">Qiymət: — ₼</div>
+        <h3>2-ci qrup Test Kitabı</h3>
+        <p>
+          Ali təhsil müəssisələrinə hazırlaşan abituriyentlər üçün test vəsaiti.
+        </p>
+        <p>
+          <strong>Fənlər:</strong> Azərbaycan dili, İngilis dili, Riyaziyyat,
+          Tarix, Coğrafiya, İnformatika
+        </p>
+        <p class="price">Qiymət: —</p>
       </div>
       <div class="buy-box">
-        <a class="detail-btn" href="#">Ətraflı</a>
-        <a class="contact-btn" href="contact.html">Əlaqə</a>
+        <a href="https://wa.me/994703194050">Sifariş üçün əlaqə</a>
       </div>
     </div>
 
+    <!-- 3-cü qrup -->
     <div class="product-card">
-      <img src="images.3cüqrup.png">
+      <div class="product-image">
+        <img src="images.qrup3.png" alt="3-cü qrup test kitabı">
+      </div>
       <div class="product-content">
-        <h3>Test Vəsaiti – III Qrup</h3>
-        <p>Növ: Test • Format: PDF • Abituriyentlər üçün.</p>
-        <div class="price">Qiymət: — ₼</div>
+        <h3>3-cü qrup Test Kitabı</h3>
+        <p>
+          Qəbul imtahanlarına sistemli hazırlıq üçün nəzərdə tutulmuş test kitabı.
+        </p>
+        <p>
+          <strong>Fənlər:</strong> Azərbaycan dili, İngilis dili, Riyaziyyat,
+          Tarix, Ədəbiyyat, Coğrafiya
+        </p>
+        <p class="price">Qiymət: —</p>
       </div>
       <div class="buy-box">
-        <a class="detail-btn" href="#">Ətraflı</a>
-        <a class="contact-btn" href="contact.html">Əlaqə</a>
+        <a href="https://wa.me/994703194050">Sifariş üçün əlaqə</a>
       </div>
     </div>
 
+    <!-- 4-cü qrup -->
     <div class="product-card">
-      <img src="images.4cüqrup.png">
+      <div class="product-image">
+        <img src="images.qrup4.png" alt="4-cü qrup test kitabı">
+      </div>
       <div class="product-content">
-        <h3>Test Vəsaiti – IV Qrup</h3>
-        <p>Növ: Test • Format: PDF • Abituriyentlər üçün.</p>
-        <div class="price">Qiymət: — ₼</div>
+        <h3>4-cü qrup Test Kitabı</h3>
+        <p>
+          Tibb yönümlü ixtisaslara hazırlaşan abituriyentlər üçün test vəsaiti.
+        </p>
+        <p>
+          <strong>Fənlər:</strong> Azərbaycan dili, İngilis dili, Riyaziyyat,
+          Biologiya, Fizika, Kimya
+        </p>
+        <p class="price">Qiymət: —</p>
       </div>
       <div class="buy-box">
-        <a class="detail-btn" href="#">Ətraflı</a>
-        <a class="contact-btn" href="contact.html">Əlaqə</a>
+        <a href="https://wa.me/994703194050">Sifariş üçün əlaqə</a>
       </div>
     </div>
 
