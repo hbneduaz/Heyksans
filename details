@@ -2,143 +2,93 @@
 <html lang="az">
 <head>
   <meta charset="UTF-8">
-  <title>Shop | Heyksans Education</title>
+  <title>1-ci qrup Test Kitabı | Heyksans Education</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: "Segoe UI", Arial, sans-serif;
+    body{
+      margin:0;
+      font-family:"Segoe UI", Arial, sans-serif;
+      background:#f2f5f4;
+      color:#2b2b2b;
     }
 
-    body {
-      background: #f2f5f4;
-      color: #2b2b2b;
+    header{
+      background:#fff;
+      padding:20px 60px;
+      border-bottom:1px solid #e3e7e5;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
     }
 
-    header {
-      background: #ffffff;
-      padding: 24px 60px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid #e3e7e5;
+    header h1{
+      color:#1f5c4d;
+      font-size:24px;
     }
 
-    header h1 {
-      font-size: 26px;
-      color: #1f5c4d;
-      font-weight: 600;
+    nav a{
+      margin-left:25px;
+      text-decoration:none;
+      color:#444;
+      font-size:15px;
     }
 
-    nav a {
-      margin-left: 28px;
-      text-decoration: none;
-      color: #444;
-      font-size: 15px;
+    .hero{
+      background:linear-gradient(135deg,#1f5c4d,#4caf7d);
+      color:#fff;
+      padding:70px 20px;
+      text-align:center;
     }
 
-    nav a:hover {
-      color: #1f5c4d;
+    .hero h2{
+      font-size:38px;
+      margin-bottom:15px;
     }
 
-    .shop-hero {
-      background: linear-gradient(135deg, #1f5c4d, #4caf7d);
-      padding: 90px 20px;
-      color: #ffffff;
-      text-align: center;
+    .container{
+      max-width:900px;
+      margin:50px auto;
+      background:#fff;
+      padding:40px;
+      border-radius:18px;
+      box-shadow:0 15px 35px rgba(0,0,0,0.1);
     }
 
-    .shop-hero h2 {
-      font-size: 42px;
-      margin-bottom: 15px;
+    h3{
+      color:#1f5c4d;
+      margin-top:30px;
     }
 
-    .shop-hero p {
-      max-width: 900px;
-      margin: auto;
-      font-size: 17px;
-      line-height: 1.8;
+    ul{
+      margin-top:15px;
+      padding-left:20px;
     }
 
-    .shop-container {
-      max-width: 1200px;
-      margin: -60px auto 80px;
-      padding: 0 20px;
+    ul li{
+      margin-bottom:8px;
     }
 
-    .products-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 30px;
+    .back-btn{
+      margin-top:40px;
+      display:inline-block;
+      padding:10px 24px;
+      background:#4caf7d;
+      color:#fff;
+      text-decoration:none;
+      border-radius:25px;
+      font-size:14px;
     }
 
-    .product-card {
-      background: #ffffff;
-      border-radius: 18px;
-      box-shadow: 0 15px 35px rgba(0,0,0,0.1);
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
+    .back-btn:hover{
+      background:#3e9e6d;
     }
 
-    .product-image {
-      height: 180px;
-      overflow: hidden;
-    }
-
-    .product-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .product-content {
-      padding: 20px;
-      text-align: center;
-    }
-
-    .product-content h3 {
-      font-size: 18px;
-      margin-bottom: 8px;
-      color: #1f5c4d;
-    }
-
-    .product-content p {
-      font-size: 15px;
-      color: #555;
-    }
-
-    .buy-box {
-      padding: 20px;
-      border-top: 1px solid #eef1ef;
-      text-align: center;
-    }
-
-    .buy-box a {
-      display: inline-block;
-      padding: 10px 22px;
-      border-radius: 25px;
-      background: #4caf7d;
-      color: #ffffff;
-      text-decoration: none;
-      font-size: 14px;
-      margin: 6px;
-    }
-
-    .buy-box a.detail {
-      background: #1f5c4d;
-    }
-
-    footer {
-      background: #ffffff;
-      padding: 30px;
-      text-align: center;
-      border-top: 1px solid #e3e7e5;
-      font-size: 14px;
-      color: #666;
+    footer{
+      text-align:center;
+      padding:25px;
+      color:#666;
+      font-size:14px;
     }
   </style>
 </head>
@@ -147,83 +97,49 @@
 <header>
   <h1>Heyksans Education</h1>
   <nav>
-    <a href="index.html">Home</a>
-    <a href="shops.html">Shops</a>
-    <a href="contact.html">Contact</a>
+    <a href="../index.html">Home</a>
+    <a href="../shops.html">Shops</a>
+    <a href="../courses.html">Course</a>
+    <a href="../contact.html">Contact</a>
   </nav>
 </header>
 
-<section class="shop-hero">
-  <h2>Test Vəsaitləri</h2>
+<section class="hero">
+  <h2>1-ci qrup Test Kitabı</h2>
+  <p>Rəsmi qəbul proqramına uyğun hazırlanmış test vəsaiti</p>
+</section>
+
+<div class="container">
+
   <p>
-    Abituriyentlər üçün hazırlanmış, dövlət qəbul proqramına uyğun
-    akademik test vəsaitləri.
+    1-ci qrup üzrə ali təhsil müəssisələrinə qəbul imtahanlarına hazırlaşan
+    abituriyentlər üçün nəzərdə tutulmuş bu test vəsaiti Heyksans Education
+    tərəfindən dövlət qəbul proqramına tam uyğun şəkildə hazırlanmışdır.
   </p>
-</section>
 
-<section class="shop-container">
+  <p>
+    Kitab elmi-metodik əsaslar üzərində qurulmuş, mövzular sistemli şəkildə
+    təqdim edilmiş və qəbul imtahanlarının strukturuna uyğun test tapşırıqları
+    ilə zənginləşdirilmişdir. Tapşırıqlar abituriyentlərin mövzu üzrə biliklərini
+    möhkəmləndirməyə və imtahan bacarıqlarını inkişaf etdirməyə xidmət edir.
+  </p>
 
-  <div class="products-grid">
+  <h3>Əhatə olunan fənlər</h3>
+  <ul>
+    <li>Azərbaycan dili</li>
+    <li>İngilis dili</li>
+    <li>Riyaziyyat</li>
+    <li>Kimya</li>
+    <li>Fizika</li>
+    <li>İnformatika</li>
+  </ul>
 
-    <div class="product-card">
-      <div class="product-image">
-        <img src="images/qrup1.png" alt="1-ci qrup">
-      </div>
-      <div class="product-content">
-        <h3>1-ci qrup Test Kitabı</h3>
-        <p>Qiymət: —</p>
-      </div>
-      <div class="buy-box">
-        <a class="detail" href="details/index.html">Ətraflı</a>
-        <a href="contact.html">Sifariş üçün əlaqə</a>
-      </div>
-    </div>
+  <p><strong>Format:</strong> PDF</p>
+  <p><strong>Status:</strong> Rəsmi nəşr</p>
 
-    <div class="product-card">
-      <div class="product-image">
-        <img src="images/qrup2.png" alt="2-ci qrup">
-      </div>
-      <div class="product-content">
-        <h3>2-ci qrup Test Kitabı</h3>
-        <p>Qiymət: —</p>
-      </div>
-      <div class="buy-box">
-        <a class="detail" href="details/index.html">Ətraflı</a>
-        <a href="contact.html">Sifariş üçün əlaqə</a>
-      </div>
-    </div>
+  <a href="../shops.html" class="back-btn">Mağazaya qayıt</a>
 
-    <div class="product-card">
-      <div class="product-image">
-        <img src="images/qrup3.png" alt="3-cü qrup">
-      </div>
-      <div class="product-content">
-        <h3>3-cü qrup Test Kitabı</h3>
-        <p>Qiymət: —</p>
-      </div>
-      <div class="buy-box">
-        <a class="detail" href="details/index.html">Ətraflı</a>
-        <a href="contact.html">Sifariş üçün əlaqə</a>
-      </div>
-    </div>
-
-    <div class="product-card">
-      <div class="product-image">
-        <img src="images/qrup4.png" alt="4-cü qrup">
-      </div>
-      <div class="product-content">
-        <h3>4-cü qrup Test Kitabı</h3>
-        <p>Qiymət: —</p>
-      </div>
-      <div class="buy-box">
-        <a class="detail" href="details/index.html">Ətraflı</a>
-        <a href="contact.html">Sifariş üçün əlaqə</a>
-      </div>
-    </div>
-
-  </div>
-
-</section>
+</div>
 
 <footer>
   © 2026 Heyksans Education — Bilik gücdür
