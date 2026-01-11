@@ -85,14 +85,10 @@
       flex-direction: column;
     }
 
-    .product-image {
-      height: 180px;
-      background: #e8f3ef;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #7aa59a;
-      font-size: 14px;
+    .product-image img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
     }
 
     .product-content {
@@ -110,18 +106,32 @@
       font-size: 15px;
       line-height: 1.6;
       color: #555;
-      margin-bottom: 18px;
+      margin-bottom: 12px;
+    }
+
+    .product-info {
+      font-size: 14px;
+      color: #444;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-weight: 600;
+      margin-top: 10px;
     }
 
     .buy-box {
-      padding: 20px 25px;
+      padding: 18px 25px;
       border-top: 1px solid #eef1ef;
-      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
     }
 
     .buy-box a {
-      display: inline-block;
-      padding: 10px 24px;
+      flex: 1;
+      text-align: center;
+      padding: 10px 0;
       border-radius: 25px;
       background: #4caf7d;
       color: #ffffff;
@@ -129,15 +139,13 @@
       font-size: 14px;
     }
 
-    .buy-box a:hover {
-      background: #3e9e6d;
+    .buy-box a.detail {
+      background: #e8f3ef;
+      color: #1f5c4d;
     }
 
-    .empty-note {
-      text-align: center;
-      margin-top: 60px;
-      font-size: 16px;
-      color: #666;
+    .buy-box a:hover {
+      opacity: 0.9;
     }
 
     footer {
@@ -165,8 +173,7 @@
 <section class="shop-hero">
   <h2>Rəsmi Məhsullar</h2>
   <p>
-    Heyksans Education tərəfindən təqdim olunan təhsil yönümlü nəşrlər və
-    bilik əsaslı məhsullar.
+    Təhsil yönümlü test vəsaitləri və bilik əsaslı nəşrlər.
   </p>
 </section>
 
@@ -174,27 +181,78 @@
 
   <div class="products-grid">
 
-    <!-- MƏHSUL NÜMUNƏSİ (sonra kopyala) -->
-    <!--
+    <!-- Məhsul 1 -->
     <div class="product-card">
       <div class="product-image">
-        Məhsul şəkli
+        <img src="images/shop1.jpg" alt="Test kitabı">
       </div>
       <div class="product-content">
-        <h3>Məhsul adı</h3>
-        <p>Məhsul haqqında qısa təsvir burada yazılacaq.</p>
+        <h3>Abituriyent Test Toplusu</h3>
+        <p>Abituriyentlər üçün hazırlanmış sistemli test vəsaiti.</p>
+        <div class="product-info">Növ: Test</div>
+        <div class="product-info">Format: PDF</div>
+        <div class="price">Qiymət: —</div>
       </div>
       <div class="buy-box">
-        <a href="https://wa.me/994703194050">Əlaqə ilə al</a>
+        <a class="detail" href="#">Ətraflı</a>
+        <a href="contact.html">Sifariş et</a>
       </div>
     </div>
-    -->
 
-  </div>
+    <!-- Məhsul 2 -->
+    <div class="product-card">
+      <div class="product-image">
+        <img src="images/shop2.jpg" alt="Test kitabı">
+      </div>
+      <div class="product-content">
+        <h3>Fənn üzrə Testlər</h3>
+        <p>Mövzular üzrə qruplaşdırılmış test tapşırıqları.</p>
+        <div class="product-info">Növ: Test</div>
+        <div class="product-info">Format: PDF</div>
+        <div class="price">Qiymət: —</div>
+      </div>
+      <div class="buy-box">
+        <a class="detail" href="#">Ətraflı</a>
+        <a href="contact.html">Sifariş et</a>
+      </div>
+    </div>
 
-  <div class="empty-note">
-    Hazırda məhsullar əlavə edilir.  
-    Yaxın zamanda yenilənəcək.
+    <!-- Məhsul 3 -->
+    <div class="product-card">
+      <div class="product-image">
+        <img src="images/shop3.jpg" alt="Test kitabı">
+      </div>
+      <div class="product-content">
+        <h3>Sınaq İmtahanı Paketləri</h3>
+        <p>Real imtahan formatına uyğun test paketləri.</p>
+        <div class="product-info">Növ: Test</div>
+        <div class="product-info">Format: PDF</div>
+        <div class="price">Qiymət: —</div>
+      </div>
+      <div class="buy-box">
+        <a class="detail" href="#">Ətraflı</a>
+        <a href="contact.html">Sifariş et</a>
+      </div>
+    </div>
+
+    <!-- Məhsul 4 -->
+    <div class="product-card">
+      <div class="product-image">
+        <img src="images/shop4.jpg" alt="Test kitabı">
+      </div>
+      <div class="product-content">
+        <h3>Hazırlıq Test Vəsaiti</h3>
+        <p>Bilik səviyyəsini ölçmək üçün hazırlanmış testlər.</p>
+        <div class="product-info">Növ: Test</div>
+        <div class="product-info">Format: PDF</div>
+        <div class="price">Qiymət: —</div>
+      </div>
+      <div class="buy-box">
+        <a class="detail" href="#">Ətraflı</a>
+        <a href="contact.html">Sifariş et</a>
+      </div>
+    </div>
+
   </div>
 
 </section>
