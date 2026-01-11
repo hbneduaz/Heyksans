@@ -1,114 +1,120 @@
 <!DOCTYPE html>
 <html lang="az">
 <head>
-<meta charset="UTF-8">
-<title>Rəsmi Məhsullar | Heyksans Education</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>1-ci qrup Test Kitabı | Heyksans Education</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:"Segoe UI",Arial}
-body{background:#f2f5f4;color:#333}
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Arial, sans-serif;
+    }
 
-/* HEADER */
-header{
-  background:#fff;
-  padding:24px 60px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  border-bottom:1px solid #e3e7e5
-}
-header h1{color:#1f5c4d;font-size:26px}
-nav a{
-  margin-left:28px;
-  text-decoration:none;
-  color:#444;
-  font-size:15px
-}
-nav a:hover{color:#1f5c4d}
+    body {
+      background: #f2f5f4;
+      color: #2b2b2b;
+      line-height: 1.8;
+    }
 
-/* HERO */
-.hero{
-  background:linear-gradient(135deg,#1f5c4d,#4caf7d);
-  padding:80px 20px;
-  text-align:center;
-  color:#fff
-}
-.hero h2{font-size:40px;margin-bottom:10px}
-.hero p{font-size:16px;opacity:.9}
+    header {
+      background: #ffffff;
+      padding: 24px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #e3e7e5;
+    }
 
-/* PRODUCTS */
-.products{
-  max-width:1200px;
-  margin:60px auto;
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:30px;
-  padding:0 20px
-}
-.card{
-  background:#fff;
-  border-radius:18px;
-  box-shadow:0 15px 35px rgba(0,0,0,.1);
-  padding:25px;
-  text-align:center
-}
-.card img{
-  width:100px;
-  height:100px;
-  object-fit:cover;
-  margin-bottom:15px
-}
-.card h3{color:#1f5c4d;font-size:18px;margin-bottom:6px}
-.card p{font-size:15px;margin-bottom:15px}
-.card button{
-  border:none;
-  padding:10px 18px;
-  border-radius:30px;
-  cursor:pointer;
-  font-size:14px;
-  margin:5px
-}
-.detail-btn{background:#1f5c4d;color:#fff}
-.contact-btn{background:#4caf7d;color:#fff}
+    header h1 {
+      font-size: 26px;
+      color: #1f5c4d;
+      font-weight: 600;
+    }
 
-/* MODAL */
-.modal{
-  position:fixed;
-  inset:0;
-  background:rgba(0,0,0,.6);
-  display:none;
-  justify-content:center;
-  align-items:center;
-  z-index:999
-}
-.modal-content{
-  background:#fff;
-  max-width:800px;
-  width:90%;
-  padding:40px;
-  border-radius:20px;
-  max-height:90vh;
-  overflow:auto
-}
-.modal h3{color:#1f5c4d;margin-bottom:15px}
-.modal p{margin-bottom:14px;font-size:15px}
-.close{
-  float:right;
-  font-size:20px;
-  cursor:pointer;
-  color:#999
-}
+    nav a {
+      margin-left: 28px;
+      text-decoration: none;
+      color: #444;
+      font-size: 15px;
+    }
 
-footer{
-  background:#fff;
-  padding:30px;
-  text-align:center;
-  border-top:1px solid #e3e7e5;
-  margin-top:60px;
-  font-size:14px
-}
-</style>
+    nav a:hover {
+      color: #1f5c4d;
+    }
+
+    .detail-hero {
+      background: linear-gradient(135deg, #1f5c4d, #4caf7d);
+      padding: 80px 20px;
+      color: #ffffff;
+      text-align: center;
+    }
+
+    .detail-hero h2 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .detail-container {
+      max-width: 900px;
+      margin: 60px auto;
+      background: #ffffff;
+      padding: 50px;
+      border-radius: 16px;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    }
+
+    .detail-container h3 {
+      color: #1f5c4d;
+      margin-bottom: 16px;
+      font-size: 22px;
+    }
+
+    .detail-container p {
+      font-size: 16px;
+      margin-bottom: 18px;
+      color: #444;
+    }
+
+    .info-list {
+      margin-top: 20px;
+    }
+
+    .info-list p {
+      margin-bottom: 10px;
+      font-size: 15px;
+    }
+
+    .contact-btn {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .contact-btn a {
+      display: inline-block;
+      padding: 12px 28px;
+      background: #1f5c4d;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 30px;
+      font-size: 15px;
+    }
+
+    .contact-btn a:hover {
+      background: #17483c;
+    }
+
+    footer {
+      background: #ffffff;
+      padding: 30px;
+      text-align: center;
+      border-top: 1px solid #e3e7e5;
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
 </head>
 
 <body>
@@ -116,104 +122,63 @@ footer{
 <header>
   <h1>Heyksans Education</h1>
   <nav>
-    <a href="index.html">Home</a>
-    <a href="shops.html">Shops</a>
-    <a href="courses.html">Course</a>
-    <a href="contact.html">Contact</a>
+    <a href="../index.html">Home</a>
+    <a href="../shops.html">Shops</a>
+    <a href="../courses.html">Course</a>
+    <a href="../contact.html">Contact</a>
   </nav>
 </header>
 
-<section class="hero">
-  <h2>Rəsmi Məhsullar</h2>
-  <p>Heyksans Education tərəfindən təqdim olunan təhsil yönümlü nəşrlər.</p>
+<section class="detail-hero">
+  <h2>1-ci qrup Test Kitabı</h2>
 </section>
 
-<section class="products">
+<section class="detail-container">
 
-  <!-- 1 -->
-  <div class="card">
-    <img src="images/qrup1.png">
-    <h3>1-ci qrup Test Kitabı</h3>
-    <p>Qiymət: —</p>
-    <button class="detail-btn" onclick="openModal('m1')">Ətraflı</button>
-    <button class="contact-btn" onclick="location.href='contact.html'">Əlaqə</button>
+  <h3>Ümumi məlumat</h3>
+  <p>
+    1-ci qrup Test Kitabı ali təhsil müəssisələrinə qəbul imtahanlarına hazırlaşan
+    abituriyentlər üçün Heyksans Education tərəfindən hazırlanmış rəsmi tədris vəsaitidir.
+    Kitab dövlət qəbul proqramına tam uyğun şəkildə tərtib olunmuş, elmi-metodik əsaslara
+    söykənən sistemli test tapşırıqlarını əhatə edir.
+  </p>
+
+  <p>
+    Nəşrdə təqdim olunan testlər abituriyentlərin mövzu üzrə biliklərini mərhələli şəkildə
+    möhkəmləndirməyə, imtahan formatına uyğun vərdişlər formalaşdırmağa və real imtahan
+    mühitinə adaptasiyanı təmin etməyə yönəlib.
+  </p>
+
+  <h3>Əhatə olunan fənlər</h3>
+  <div class="info-list">
+    <p>• Azərbaycan dili</p>
+    <p>• İngilis dili</p>
+    <p>• Riyaziyyat</p>
+    <p>• Kimya</p>
+    <p>• Fizika</p>
+    <p>• İnformatika</p>
   </div>
 
-  <!-- 2 -->
-  <div class="card">
-    <img src="images/qrup2.png">
-    <h3>2-ci qrup Test Kitabı</h3>
-    <p>Qiymət: —</p>
-    <button class="detail-btn" onclick="openModal('m2')">Ətraflı</button>
-    <button class="contact-btn" onclick="location.href='contact.html'">Əlaqə</button>
-  </div>
+  <h3>Format və istifadə məqsədi</h3>
+  <p>
+    Test kitabı PDF formatında təqdim olunur və həm fərdi hazırlıq, həm də kurs və tədris
+    mərkəzlərində istifadə üçün nəzərdə tutulmuşdur.
+  </p>
 
-  <!-- 3 -->
-  <div class="card">
-    <img src="images/qrup3.png">
-    <h3>3-cü qrup Test Kitabı</h3>
-    <p>Qiymət: —</p>
-    <button class="detail-btn" onclick="openModal('m3')">Ətraflı</button>
-    <button class="contact-btn" onclick="location.href='contact.html'">Əlaqə</button>
-  </div>
+  <h3>Status</h3>
+  <p>
+    Məhsul hazır vəziyyətdədir və sifariş üçün açıqdır.
+  </p>
 
-  <!-- 4 -->
-  <div class="card">
-    <img src="images/qrup4.png">
-    <h3>4-cü qrup Test Kitabı</h3>
-    <p>Qiymət: —</p>
-    <button class="detail-btn" onclick="openModal('m4')">Ətraflı</button>
-    <button class="contact-btn" onclick="location.href='contact.html'">Əlaqə</button>
+  <div class="contact-btn">
+    <a href="../contact.html">Sifariş üçün əlaqə</a>
   </div>
 
 </section>
-
-<!-- MODALS -->
-<div class="modal" id="m1">
-<div class="modal-content">
-<span class="close" onclick="closeModal('m1')">✖</span>
-<h3>1-ci qrup Test Kitabı</h3>
-<p>Ali məktəblərə qəbul üçün hazırlanmış rəsmi test vəsaiti.</p>
-<p><b>Fənlər:</b> Azərbaycan dili, İngilis dili, Riyaziyyat, Kimya, Fizika, İnformatika</p>
-<p>İmtahan formatına uyğun sistemli testlər.</p>
-</div>
-</div>
-
-<div class="modal" id="m2">
-<div class="modal-content">
-<span class="close" onclick="closeModal('m2')">✖</span>
-<h3>2-ci qrup Test Kitabı</h3>
-<p>İqtisadi və idarəetmə yönümlü ixtisaslara hazırlıq.</p>
-<p><b>Fənlər:</b> Azərbaycan dili, İngilis dili, Riyaziyyat, Tarix, Coğrafiya</p>
-</div>
-</div>
-
-<div class="modal" id="m3">
-<div class="modal-content">
-<span class="close" onclick="closeModal('m3')">✖</span>
-<h3>3-cü qrup Test Kitabı</h3>
-<p>Humanitar və sosial ixtisaslara yönəlmiş test toplusu.</p>
-<p><b>Fənlər:</b> Azərbaycan dili, İngilis dili, Tarix, Ədəbiyyat, Coğrafiya</p>
-</div>
-</div>
-
-<div class="modal" id="m4">
-<div class="modal-content">
-<span class="close" onclick="closeModal('m4')">✖</span>
-<h3>4-cü qrup Test Kitabı</h3>
-<p>Tibb və biologiya yönümlü ixtisaslara hazırlıq.</p>
-<p><b>Fənlər:</b> Azərbaycan dili, İngilis dili, Biologiya, Kimya, Fizika</p>
-</div>
-</div>
 
 <footer>
-© 2026 Heyksans Education — Bilik gücdür
+  © 2026 Heyksans Education — Bilik gücdür
 </footer>
-
-<script>
-function openModal(id){document.getElementById(id).style.display="flex"}
-function closeModal(id){document.getElementById(id).style.display="none"}
-</script>
 
 </body>
 </html>
