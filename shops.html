@@ -30,7 +30,6 @@
     header h1 {
       font-size: 26px;
       color: #1f5c4d;
-      font-weight: 600;
     }
 
     nav a {
@@ -47,21 +46,13 @@
     .shop-hero {
       background: linear-gradient(135deg, #1f5c4d, #4caf7d);
       padding: 90px 20px;
-      color: #ffffff;
+      color: #fff;
       text-align: center;
     }
 
     .shop-hero h2 {
       font-size: 42px;
       margin-bottom: 15px;
-    }
-
-    .shop-hero p {
-      max-width: 900px;
-      margin: auto;
-      font-size: 17px;
-      line-height: 1.8;
-      opacity: 0.95;
     }
 
     .shop-container {
@@ -77,7 +68,7 @@
     }
 
     .product-card {
-      background: #ffffff;
+      background: #fff;
       border-radius: 18px;
       box-shadow: 0 15px 35px rgba(0,0,0,0.1);
       overflow: hidden;
@@ -85,43 +76,37 @@
       flex-direction: column;
     }
 
-    .product-image img {
+    .product-card img {
       width: 100%;
-      height: 220px;
+      height: 200px;
       object-fit: cover;
     }
 
     .product-content {
-      padding: 25px;
+      padding: 22px;
       flex: 1;
     }
 
     .product-content h3 {
       font-size: 18px;
-      margin-bottom: 10px;
       color: #1f5c4d;
+      margin-bottom: 8px;
     }
 
     .product-content p {
-      font-size: 15px;
+      font-size: 14px;
       line-height: 1.6;
       color: #555;
-      margin-bottom: 12px;
-    }
-
-    .product-info {
-      font-size: 14px;
-      color: #444;
-      margin-bottom: 10px;
     }
 
     .price {
-      font-weight: 600;
       margin-top: 10px;
+      font-weight: 600;
+      color: #333;
     }
 
     .buy-box {
-      padding: 18px 25px;
+      padding: 18px;
       border-top: 1px solid #eef1ef;
       display: flex;
       justify-content: space-between;
@@ -131,25 +116,24 @@
     .buy-box a {
       flex: 1;
       text-align: center;
-      padding: 10px 0;
+      padding: 10px;
       border-radius: 25px;
-      background: #4caf7d;
-      color: #ffffff;
       text-decoration: none;
       font-size: 14px;
     }
 
-    .buy-box a.detail {
-      background: #e8f3ef;
-      color: #1f5c4d;
+    .detail-btn {
+      border: 1px solid #4caf7d;
+      color: #4caf7d;
     }
 
-    .buy-box a:hover {
-      opacity: 0.9;
+    .contact-btn {
+      background: #4caf7d;
+      color: #fff;
     }
 
     footer {
-      background: #ffffff;
+      background: #fff;
       padding: 30px;
       text-align: center;
       border-top: 1px solid #e3e7e5;
@@ -171,90 +155,66 @@
 </header>
 
 <section class="shop-hero">
-  <h2>Rəsmi Məhsullar</h2>
-  <p>
-    Təhsil yönümlü test vəsaitləri və bilik əsaslı nəşrlər.
-  </p>
+  <h2>Rəsmi Nəşrlər</h2>
+  <p>Təhsil yönümlü test vəsaitləri və bilik əsaslı materiallar</p>
 </section>
 
 <section class="shop-container">
-
   <div class="products-grid">
 
-    <!-- Məhsul 1 -->
     <div class="product-card">
-      <div class="product-image">
-        <img src="images/shop1.jpg" alt="Test kitabı">
-      </div>
+      <img src="images.1ciqrup.png">
       <div class="product-content">
-        <h3>Abituriyent Test Toplusu</h3>
-        <p>Abituriyentlər üçün hazırlanmış sistemli test vəsaiti.</p>
-        <div class="product-info">Növ: Test</div>
-        <div class="product-info">Format: PDF</div>
-        <div class="price">Qiymət: —</div>
+        <h3>Test Vəsaiti – I Qrup</h3>
+        <p>Növ: Test • Format: PDF • Abituriyentlər üçün hazırlanıb.</p>
+        <div class="price">Qiymət: — ₼</div>
       </div>
       <div class="buy-box">
-        <a class="detail" href="#">Ətraflı</a>
-        <a href="contact.html">Sifariş et</a>
+        <a class="detail-btn" href="#">Ətraflı</a>
+        <a class="contact-btn" href="contact.html">Əlaqə</a>
       </div>
     </div>
 
-    <!-- Məhsul 2 -->
     <div class="product-card">
-      <div class="product-image">
-        <img src="images/shop2.jpg" alt="Test kitabı">
-      </div>
+      <img src="images.2ciqrup.png">
       <div class="product-content">
-        <h3>Fənn üzrə Testlər</h3>
-        <p>Mövzular üzrə qruplaşdırılmış test tapşırıqları.</p>
-        <div class="product-info">Növ: Test</div>
-        <div class="product-info">Format: PDF</div>
-        <div class="price">Qiymət: —</div>
+        <h3>Test Vəsaiti – II Qrup</h3>
+        <p>Növ: Test • Format: PDF • Abituriyentlər üçün.</p>
+        <div class="price">Qiymət: — ₼</div>
       </div>
       <div class="buy-box">
-        <a class="detail" href="#">Ətraflı</a>
-        <a href="contact.html">Sifariş et</a>
+        <a class="detail-btn" href="#">Ətraflı</a>
+        <a class="contact-btn" href="contact.html">Əlaqə</a>
       </div>
     </div>
 
-    <!-- Məhsul 3 -->
     <div class="product-card">
-      <div class="product-image">
-        <img src="images/shop3.jpg" alt="Test kitabı">
-      </div>
+      <img src="images.3cüqrup.png">
       <div class="product-content">
-        <h3>Sınaq İmtahanı Paketləri</h3>
-        <p>Real imtahan formatına uyğun test paketləri.</p>
-        <div class="product-info">Növ: Test</div>
-        <div class="product-info">Format: PDF</div>
-        <div class="price">Qiymət: —</div>
+        <h3>Test Vəsaiti – III Qrup</h3>
+        <p>Növ: Test • Format: PDF • Abituriyentlər üçün.</p>
+        <div class="price">Qiymət: — ₼</div>
       </div>
       <div class="buy-box">
-        <a class="detail" href="#">Ətraflı</a>
-        <a href="contact.html">Sifariş et</a>
+        <a class="detail-btn" href="#">Ətraflı</a>
+        <a class="contact-btn" href="contact.html">Əlaqə</a>
       </div>
     </div>
 
-    <!-- Məhsul 4 -->
     <div class="product-card">
-      <div class="product-image">
-        <img src="images/shop4.jpg" alt="Test kitabı">
-      </div>
+      <img src="images.4cüqrup.png">
       <div class="product-content">
-        <h3>Hazırlıq Test Vəsaiti</h3>
-        <p>Bilik səviyyəsini ölçmək üçün hazırlanmış testlər.</p>
-        <div class="product-info">Növ: Test</div>
-        <div class="product-info">Format: PDF</div>
-        <div class="price">Qiymət: —</div>
+        <h3>Test Vəsaiti – IV Qrup</h3>
+        <p>Növ: Test • Format: PDF • Abituriyentlər üçün.</p>
+        <div class="price">Qiymət: — ₼</div>
       </div>
       <div class="buy-box">
-        <a class="detail" href="#">Ətraflı</a>
-        <a href="contact.html">Sifariş et</a>
+        <a class="detail-btn" href="#">Ətraflı</a>
+        <a class="contact-btn" href="contact.html">Əlaqə</a>
       </div>
     </div>
 
   </div>
-
 </section>
 
 <footer>
